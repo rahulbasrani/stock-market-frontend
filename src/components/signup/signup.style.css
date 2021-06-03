@@ -1,0 +1,1025 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-submit {
+  background-color: #ff6600;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+}
+.main-content {
+  min-height: 723px;
+}
+.signup-body {
+  min-height: 900px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.account-class {
+  color: #58647a;
+}
+.form-submit:hover {
+  background-color: #a74300;
+  color: white;
+}
+.error {
+  color: rgb(238, 95, 95);
+  font-size: smaller;
+  display: flex;
+  text-align: left;
+}
+.signup-form {
+  background-color: white;
+  position: relative;
+  margin-top: 52.5px;
+}
+.img-div {
+  height: 660px;
+  float: left;
+  margin-top: 25px;
+}
+.create-account-class {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.form-control {
+  height: 56.2px;
+  font-size: 1.3vw;
+}
+section {
+  float: right;
+}
+.toast-width {
+  width: 400px;
+  font-size: 15px;
+}
+.fp-container {
+  position: fixed;
+  width: 25vw;
+  height: 27vw;
+  top: 97.5px;
+  left: 37.2vw;
+  background: #f8f8f8ad;
+}
+.fp-container .fp-loader {
+  top: 187.5px;
+  left: 12vw;
+  z-index: 1000;
+  position: absolute;
+}
+.required {
+  color: rgb(238, 95, 95);
+  margin-left: 2.2px;
+}
+
+.control-label {
+  display: flex;
+}
+label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.9vw;
+  font-weight: bold;
+}
+input.error {
+  border-color: rgb(238, 95, 95);
+}
+.form-row {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.anchor-class-checkbox {
+  color: #2d9703;
+  font-size: 1rem;
+  margin-top: 0.2vw;
+}
+.anchor-class {
+  color: #2d9703;
+  font-size: 1rem;
+}
+.anchor-register-button {
+  padding: 0rem 1rem;
+}
+.danger-icon {
+  margin-top: -10px;
+}
+.checkbox-label-text {
+  font-size: 1.1rem;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 5rem;
+  color: black;
+}
+nav {
+  min-height: 100px;
+}
+.signup-btn {
+  background-color: #2d9703;
+  color: aliceblue;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition: ease;
+}
+.signupform-div {
+  margin-left: -18.75px;
+}
+.loader-content {
+  width: 100%;
+  margin-bottom: 0px;
+  position: fixed;
+  z-index: 1;
+}
+.signup-btn:hover {
+  background-color: #206d01;
+  color: aliceblue;
+}
+.logo {
+  width: 200px;
+}
+ul#menu li {
+  display: inline;
+  padding: 10px;
+}
+.title-logo {
+  color: #7c795d;
+  font-family: "Trocchi", serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
+}
+
+.anchor-class {
+  color: #2d9703;
+}
+.anchor-class:hover {
+  color: #2d9703;
+  text-decoration: none;
+}
+.anchor-class-checkbox:hover {
+  text-decoration: none;
+  color: #2d9703;
+}
+.btns {
+  border: 1px solid #2d9703;
+  background-color: white;
+  color: #2d9703;
+  cursor: pointer;
+}
+
+.hovers {
+  border-color: #2d9703;
+  color: #2d9703;
+  transition: ease;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+}
+.hovers:hover {
+  background-color: #2d9703;
+  color: white;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  margin-top: 0px;
+}
+.help-block {
+  font-size: smaller;
+  color: gray;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.error-firstname {
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+footer {
+  margin-top: auto;
+  font-size: 15px;
+  color: #58647a;
+  background-color: #f3f6fa;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container {
+  margin-top: 52.5px;
+}
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+form {
+  text-align: left;
+}
+h1 {
+  text-align: left;
+}
+.anchor-class-login-signup {
+  color: #2d9703;
+}
+.anchor-class-login-signup:hover {
+  cursor: pointer;
+  color: #206d01;
+  border-bottom: 2px solid #206d01;
+}
+.bottom-info {
+  margin-bottom: 11.2px;
+  margin-left: 0.25vw;
+}
+button:hover {
+  cursor: pointer;
+}
+.btn-class {
+  display: block;
+  text-align: left;
+  transition: ease;
+  transition-duration: 0.59s;
+  transition-timing-function: ease-out;
+}
+
+.navbar-light {
+  padding: 1.5rem 0px;
+}
+.resend-password-class {
+  margin-top: 105px;
+}
+.login-form-class {
+  margin-top: 165px;
+}
+.btn-contact {
+  border: 1px solid #2d9703;
+  background-color: white;
+  color: #2d9703;
+  padding: 7.5px 1vw;
+  cursor: pointer;
+}
+
+.btn-register-with-us {
+  border: 1px solid #2d9703;
+  background-color: white;
+  color: #2d9703;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #58647a;
+  opacity: 0.5;
+}
+
+.arrow-align-email {
+  position: absolute;
+  top: -25%;
+  bottom: 15%;
+  left: 85%;
+}
+.anchor-class-login {
+  font-size: 1.1rem;
+}
+.anchor-class-login:hover {
+  cursor: pointer;
+}
+.box {
+  position: relative;
+}
+.arrow {
+  color: white;
+  float: right;
+  margin-right: 0.5vw;
+  margin-top: 2.5px;
+}
+.img-logos {
+  margin-top: -9px;
+}
+.logo-texts {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #2d9703;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
+.hero-signup-form {
+  height: 45vw;
+  width: 30vw;
+  margin-left: 10vw;
+  margin-top: -5vh;
+}
+button .arrow::after {
+  background-image: url("../../assets/images/arrow-for-btn.svg");
+  width: 8px;
+  height: 16px;
+  display: inline-block;
+  background-size: 8px 16px;
+  content: "";
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+button:hover,
+.arrow:hover {
+  color: white;
+}
+button:hover .arrow::after {
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -o-transform: translateX(4px);
+  transform: translateX(5px);
+}
+.form-button {
+  float: left;
+}
+.verification-class {
+  font-size: 1.1rem;
+  color: #58647a;
+}
+.email-verification-button {
+  margin: 37.5px 0px;
+}
+.button-for-dashboard {
+  font-size: 18.7px !important;
+}
+.email-verification-section {
+  margin-top: 150px;
+}
+.arrow-text-email {
+  margin-top: 153.2px;
+}
+.account-class-forgot {
+  font-size: 17.6px;
+  color: #58647a;
+}
+.arrow-text-reset {
+  margin-top: 18px;
+}
+.loader-div {
+  margin-top: 0px;
+}
+.check-box-group {
+  display: flex;
+  flex-direction: column;
+}
+.signup-button-text {
+  padding-bottom: 3.7px;
+}
+.check-class {
+  float: left;
+  margin-top: 0px;
+}
+.check-text {
+  float: right;
+  font-size: 1.1rem;
+  color: #58647a;
+}
+.register-form {
+  margin-left: -15px;
+}
+
+.align-class {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.span-column-center {
+  vertical-align: middle;
+}
+.toast-class {
+  color: black;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.toast-class span {
+  font-size: 16px;
+}
+.hero-actual {
+  width: 40vw;
+  margin-left: 5vw;
+  height: 370px;
+}
+.border-error {
+  border: 1px solid rgb(238, 95, 95);
+}
+.standard-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-link {
+  color: #2d9703;
+}
+.gray-class {
+  color: #58647a;
+}
+.checkbox-class {
+  vertical-align: middle;
+  margin-left: 3.7px;
+  margin-right: 7.5px;
+}
+
+.form-controls {
+  margin: 20px 0;
+}
+.form-control-email {
+  margin: 4.5px 0;
+}
+.form-control-password {
+  margin: 20px 0px 20px 0px;
+}
+.checbox-span-text {
+  display: flex;
+}
+
+.checkbox {
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+  display: block;
+}
+.checkbox label {
+  position: relative;
+  min-height: 34px;
+  display: block;
+  padding-left: 25px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.checkbox label span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.checkbox label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.28s ease;
+  border-radius: 2.5px;
+  border: 1.5px solid rgb(73, 73, 73);
+}
+.checkbox label:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 7px;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.15s;
+  position: absolute;
+  top: 10px;
+  left: 7.5px;
+}
+
+.label-class {
+  display: flex;
+}
+.checkbox input[type="checkbox"] {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+  margin-left: -20px;
+}
+.checkbox input[type="checkbox"]:checked ~ label:before {
+  background-color: #3ab409;
+  border: 2px solid #3ab409;
+}
+.checkbox input[type="checkbox"]:checked ~ label:after {
+  transform: rotate(-45deg) scale(1);
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: 0;
+}
+@media (max-width: 481px) {
+  .form-control {
+    height: 45px;
+    font-size: 2vw;
+  }
+  .img-div {
+    margin-bottom: 0px;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .bottom-info span {
+    margin-top: 7.5px;
+  }
+  .signup-form {
+    margin-top: 0px;
+  }
+  .button-text {
+    font-size: 3vw;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .create-account-class {
+    margin-left: -50vw;
+    text-align: left;
+    align-items: center;
+  }
+  .check-class {
+    float: left;
+    margin-right: 5vw;
+  }
+  .check-text {
+    font-size: 0.8rem;
+    padding-left: 19vw;
+    margin-bottom: 15px;
+  }
+  .hero-actual {
+    margin-top: -35px;
+    width: 90vw;
+    margin-left: 0vw;
+    height: 300px;
+  }
+  .btn-contact {
+    padding: 3.7px 0.3vw;
+    font-size: 12px;
+    width: 30vw;
+    margin-right: 5px;
+  }
+  .footer-text {
+    font-size: 15px;
+  }
+  .nav-item {
+    margin: 11.2px 0vw;
+    width: 100%;
+  }
+  .navbar-toggler {
+    margin-right: 4vw;
+  }
+  .bottom-info span {
+    margin-top: 1.5vh;
+    font-size: 2vw;
+  }
+  .anchor-class-checkbox {
+    color: #2d9703;
+    font-size: 2vw;
+    margin-top: 1vw;
+  }
+  .checkbox label {
+    margin-right: 1.5vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .form-control {
+    height: 45px;
+    font-size: 2vw;
+  }
+  .img-div {
+    margin-bottom: 10px;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .bottom-info span {
+    margin-top: 7.5px;
+  }
+  .signup-form {
+    margin-top: 0px;
+  }
+  .button-text {
+    font-size: 3vw;
+  }
+  .bottom-info {
+    font-size: 2vw;
+    margin-bottom: 22.5px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .create-account-class {
+    margin-left: -70vw;
+    text-align: left;
+    align-items: center;
+  }
+  .check-class {
+    float: left;
+    margin-right: 5vw;
+  }
+  .check-text {
+    font-size: 0.8rem;
+    padding-left: 12.5vw;
+    margin-bottom: 15px;
+  }
+  .hero-actual {
+    width: 90vw;
+    margin-left: 0vw;
+    height: 412.5px;
+  }
+  .btn-contact {
+    padding: 3.7px 0.3vw;
+    font-size: 12px;
+    width: 30vw;
+    margin-right: 5px;
+  }
+  .footer-text {
+    font-size: 15px;
+  }
+  .navbar-toggler {
+    margin-right: 4vw;
+  }
+  .bottom-info span {
+    margin-top: -0.5vh;
+    font-size: 3vw;
+  }
+  .anchor-class-checkbox {
+    color: #2d9703;
+    font-size: 3vw;
+  }
+  .checkbox label {
+    margin-right: 0.7vw;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+  .bottom-info {
+    font-size: 0.5vw;
+  }
+  .signup-button-text {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 1.65vw;
+  }
+  .checkbox label {
+    position: relative;
+    min-height: 34px;
+    display: block;
+    padding-left: 12px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  .checkbox label:before {
+    width: 15px;
+    height: 15px;
+  }
+  .checkbox label:after {
+    height: 5px;
+    width: 9px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    top: 8px;
+    left: 7px;
+  }
+  .anchor-class-checkbox {
+    color: #2d9703;
+    font-size: 0.85vw;
+  }
+  .checkbox span {
+    margin-top: 6.5px;
+    font-size: 0.85vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .account-class {
+    font-size: 0.8rem;
+  }
+  .anchor-class-log {
+    font-size: 0.8rem;
+  }
+  .form-control {
+    height: 30px;
+    font-size: 10px;
+  }
+  .check-text {
+    font-size: 0.8rem;
+  }
+  .check-text {
+    padding-left: 6.2vw;
+    margin-bottom: 15px;
+  }
+  .hero-actual {
+    height: 230px;
+    width: 45vw;
+  }
+  .main-content {
+    min-height: 721px;
+  }
+  .nav-item {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1149px) {
+  .bottom-info {
+    font-size: 0.7vw;
+  }
+  .anchor-class-checkbox {
+    color: #2d9703;
+    font-size: 1vw;
+  }
+  .checkbox span {
+    margin-top: 0.8vh;
+    font-size: 1vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .account-class {
+    font-size: 0.8rem;
+  }
+  .anchor-class-log {
+    font-size: 0.8rem;
+  }
+  .form-control {
+    height: 37.5px;
+    font-size: 11.2px;
+  }
+  .check-text {
+    font-size: 0.8rem;
+  }
+  .check-text {
+    padding-left: 5.5vw;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1150px) and (max-width: 1304px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .bottom-info {
+    font-size: 0.9vw;
+  }
+  .anchor-class-checkbox {
+    color: #2d9703;
+    font-size: 0.9vw;
+  }
+  .checkbox span {
+    margin-top: 0.9vh;
+  }
+  .hero-actual {
+    width: 50vw;
+    margin-left: 0vw;
+    height: 300px;
+  }
+  .form-control {
+    height: 45px;
+    font-size: 15px;
+  }
+  .check-text {
+    padding-left: 4.9vw;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1305px) and (max-width: 1699px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .check-text {
+    padding-left: 4.55vw;
+    margin-bottom: 15px;
+  }
+  .hero-actual {
+    width: 48vw;
+    margin-left: 0vw;
+    height: 300px;
+  }
+  .form-control {
+    height: 52.5px;
+    font-size: 18.7px;
+  }
+  .bottom-info {
+    font-size: 1vw;
+  }
+  .anchor-class-checkbox {
+    color: #2d9703;
+    font-size: 1vw;
+  }
+  .arrow {
+    margin-top: 1.5px;
+  }
+  .form-controls {
+    margin: 35px 0 20px 0;
+  }
+  .form-control-email {
+    margin: 4.5px 0;
+  }
+  .form-control-password {
+    margin: 20px 0px 20px 0px;
+  }
+  .button-text {
+    font-size: 18.7px;
+  }
+  .checkbox span {
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 4000px) {
+  .main-content {
+    min-height: 750px;
+  }
+  .signup-button-text {
+    padding-bottom: 5px;
+    padding-top: 0px;
+    font-size: 1.25vw;
+  }
+  .arrow {
+    margin-top: 4px;
+  }
+  .anchor-class-checkbox {
+    color: #2d9703;
+    font-size: 1vw;
+  }
+  .bottom-info {
+    font-size: 1vw;
+  }
+  .signup-body {
+    min-height: 750px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .form-control {
+    height: 55px;
+    font-size: 1.2vw;
+  }
+  footer {
+    font-size: 18px;
+    height: 65px;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .nav-item {
+    margin-right: 1vw;
+  }
+  .navbar-nav {
+    margin-right: 0.5vw;
+  }
+
+  .account-class {
+    font-size: 1.1rem;
+  }
+  .anchor-class-log {
+    font-size: 1.1rem;
+  }
+  .span-left {
+    margin-bottom: 15px;
+  }
+  .form-controls {
+    margin: 40px 0 23px 0;
+  }
+  .form-control-email {
+    margin: 7px 0;
+  }
+  .form-control-password {
+    margin: 23px 0px 20px 0px;
+  }
+  .button-text {
+    font-size: 1.2vw;
+  }
+  button .arrow::after {
+    background-size: 11px 22px;
+    width: 11px;
+    height: 22px;
+  }
+  .hero-actual {
+    width: 25vw;
+    margin-left: 10vw;
+    height: 300px;
+  }
+  .description-class {
+    margin-left: 5vw;
+  }
+  .img-div {
+    height: 0px;
+    margin-top: 45px;
+    margin-left: 0vw;
+  }
+  .create-account-class {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .check-text {
+    word-spacing: 5px;
+  }
+  .check-text {
+    padding-left: 3.5vw;
+    margin-bottom: 15px;
+  }
+  .checkbox label:before {
+    width: 1vw;
+    height: 1vw;
+  }
+  .checkbox label:after {
+    width: 19px;
+    height: 9px;
+    top: 11.9px;
+    left: 9px;
+  }
+  .bottom-info span {
+    margin-top: -0.5vh;
+  }
+  .checkbox label {
+    margin-right: 0.7vw;
+  }
+}
+
+@media (min-height: 901px) {
+  .main-content {
+    min-height: 84vh;
+  }
+  .hero-actual {
+    height: 40vh;
+    width: 35vw;
+  }
+  .form-control {
+    height: 8vh;
+    font-size: 1vw;
+  }
+  .checkbox span {
+    font-size: 1.2vw;
+  }
+  .signup-button-text {
+    padding-bottom: 7px;
+    padding-top: 2px;
+    font-size: 1.35vw;
+  }
+  .arrow {
+    margin-top: 1px;
+  }
+  .anchor-class-checkbox {
+    color: #2d9703;
+    font-size: 1.2vw;
+  }
+  .account-class {
+    font-size: 2vh;
+  }
+  .anchor-class-log {
+    font-size: 2vh !important;
+  }
+  .checkbox label:before {
+    width: 1vw;
+    height: 1vw;
+  }
+  .checkbox label:after {
+    width: 19px;
+    height: 9px;
+    top: 11.9px;
+    left: 9px;
+  }
+  .bottom-info span {
+    margin-top: -0.9vh;
+  }
+  .checkbox label {
+    margin-right: 21px;
+  }
+  .form-button {
+    margin-top: 1vh;
+  }
+  button .arrow::after {
+    width: 15px;
+    height: 30px;
+    background-size: 15px 30px;
+  }
+  .check-text {
+    padding-left: 3.5vw;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2100px) {
+  .check-text {
+    padding-left: 3.9vw;
+    margin-bottom: 15px;
+  }
+  .bottom-info span {
+    margin-top: -0.5vh;
+  }
+  .checkbox label {
+    margin-right: 11.5px;
+  }
+}

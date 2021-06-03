@@ -1,0 +1,87 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-content-success-verify {
+  min-height: 723px;
+}
+
+.success-verified-body {
+  min-height: 900px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.success-verified-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sucess-email-btn {
+  background-color: #2d9703;
+  color: aliceblue;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition: ease;
+}
+.sucess-email-btn:hover {
+  background-color: #206d01;
+  color: aliceblue;
+}
+
+.arrow-verified {
+  color: white;
+  float: right;
+  margin-right: 0.5vw;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+button .arrow-verified::after {
+  background-image: url("../../assets/images/arrow-for-btn.svg");
+  width: 8px;
+  height: 16px;
+  display: inline-block;
+  background-size: 8px 16px;
+  content: "";
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+button:hover,
+.arrow-verified:hover {
+  color: white;
+}
+button:hover .arrow-verified::after {
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -o-transform: translateX(4px);
+  transform: translateX(5px);
+}
+
+.verified-button-text {
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  .success-verified-header {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .verified-button-text {
+    font-size: 0.85rem;
+  }
+}
+@media (min-height: 901px) {
+  .main-content-success-verify {
+    min-height: 84vh;
+  }
+}
