@@ -11,13 +11,11 @@ import HeroEmail from "../../assets/images/img_login.svg";
 const EmailVerificationComponent = () => {
   const location = useLocation();
   const history = useHistory();
-  const [disable, setDisable] = React.useState(true);
   const [loader, showLoader, hideLoader] = useFullPageLoader();
   const email = location.state.email;
 
   const resendChange = async () => {
     showLoader();
-    setDisable(true);
     const dataResend = {
       email: email,
     };
@@ -33,15 +31,14 @@ const EmailVerificationComponent = () => {
         }
       );
       hideLoader();
-      setDisable(false);
 
-      if (res.status == 200) {
+      if (res.status === 200) {
         toast.success("✅ Email verification link sent ✅", {
           position: "top-center",
         });
       }
 
-      if (res.status == 400) {
+      if (res.status === 400) {
         toast.error("🧐 User Not found 🧐 ", {
           position: "top-center",
         });

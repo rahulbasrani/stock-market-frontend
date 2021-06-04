@@ -12,7 +12,6 @@ import HeroResetPassword from "../../assets/images/img_login.svg";
 
 const ResetPasswordComponent = () => {
   const [loader, showLoader, hideLoader] = useFullPageLoader();
-  const [disable, setDisable] = React.useState(true);
 
   const location = useLocation();
   const history = useHistory();
@@ -23,7 +22,6 @@ const ResetPasswordComponent = () => {
       email: email.toLowerCase(),
     };
     showLoader();
-    setDisable(true);
     try {
       const res = await fetch(
         `${process.env.REACT_App_BASE_URL}/forgot_password`,
@@ -36,15 +34,14 @@ const ResetPasswordComponent = () => {
         }
       );
       hideLoader();
-      setDisable(false);
 
-      if (res.status == 201) {
+      if (res.status === 201) {
         toast.warn("✅ Reset link sent to email ✅", {
           position: "top-center",
         });
       }
 
-      if (res.status == 400) {
+      if (res.status === 400) {
         toast.error("🎃 Email not valid 🎃 ", {
           position: "top-center",
         });

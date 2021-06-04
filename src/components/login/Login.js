@@ -69,12 +69,11 @@ const LoginComponent = () => {
         hideLoader();
         setDisable(false);
 
-        if (res.status == 201) {
+        if (res.status === 201) {
           let loginData = {
             email: dataLogin.email,
           };
 
-          let data = localStorage.getItem("isLogin");
           /****  Stringify setItem values that takes string or null  ****/
 
           localStorage.setItem("isLogin", JSON.stringify(loginData));
@@ -82,13 +81,13 @@ const LoginComponent = () => {
           history.push("/dashboard");
         }
 
-        if (res.status == 400) {
+        if (res.status === 400) {
           toast.error("🧐 Invalid credentials entered 🧐 ", {
             position: "top-center",
           });
         }
 
-        if (res.status == 401) {
+        if (res.status === 401) {
           history.push({
             pathname: "/email-verification",
             state: {

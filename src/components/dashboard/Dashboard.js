@@ -15,15 +15,12 @@ import {
   loadChartForDate,
 } from "../../api/iex";
 
-import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
 
 import {
   MuiPickersUtilsProvider,
-  KeyboardTimePicker,
   KeyboardDatePicker,
 } from "@material-ui/pickers";
-import { setDate } from "date-fns";
 
 import HeroEmail from "../../assets/images/img_login.svg";
 
@@ -165,7 +162,6 @@ class DashBoard extends Component {
       quoteHistory,
       showHistory,
       news,
-      showAllNews,
       chart,
       showAllChart,
       error,
@@ -178,8 +174,6 @@ class DashBoard extends Component {
     const chartReverseMin = chartReverse.slice(0, 12);
 
     const quoteHistoryReverse = [...quoteHistory].reverse();
-
-    const newsMin = [...news].slice(0, 2);
 
     const companyName = !!quote && quote.companyName;
     const chartCloses = [];
@@ -262,6 +256,7 @@ class DashBoard extends Component {
                   <span className="input-group-btn">
                     <button
                       type="button"
+                      name="button"
                       className="btn btn-success ml-1"
                       style={{
                         padding: "10px",

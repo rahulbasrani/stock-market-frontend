@@ -49,5 +49,4 @@ const DateTable = ({ open, close, high, low, change, symbol, volume }) => {
     </div>
   );
 };
-
 export default DateTable;

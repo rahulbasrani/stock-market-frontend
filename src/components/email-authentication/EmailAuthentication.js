@@ -28,11 +28,11 @@ const AuthenticationOfEmail = () => {
         }
       );
 
-      if (res.status == 200) {
+      if (res.status === 200) {
         history.push("/email-verified");
       }
 
-      if (res.status == 422 || res.status == 400) {
+      if (res.status === 422 || res.status === 400) {
         toast.error("🧐 Invalid token 🧐 ", {
           position: "top-center",
         });
@@ -45,18 +45,13 @@ const AuthenticationOfEmail = () => {
       console.log(error);
     }
   };
-
-  const handleChange = () => {
-    checkToken();
-  };
   React.useEffect(() => {
-    handleChange();
+    checkToken();
   }, []);
 
   return (
     <div>
       <ToastContainer />
-      <div onClick={handleChange}></div>
     </div>
   );
 };

@@ -68,13 +68,13 @@ const SetupPasswordComponent = () => {
         hideLoader();
         setDisable(false);
 
-        if (res.status == 201) {
+        if (res.status === 201) {
           history.push("/login");
         }
-        if (res.status == 401) {
+        if (res.status === 401) {
           setRepeatedPassword(true);
         }
-        if (res.status == 422) {
+        if (res.status === 422) {
           toast.error("🧐 Invalid token entered 🧐 ", {
             position: "top-center",
           });

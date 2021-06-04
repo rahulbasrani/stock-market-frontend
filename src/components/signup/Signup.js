@@ -22,8 +22,6 @@ const SignupForm = () => {
   const [loader, showLoader, hideLoader] = useFullPageLoader();
 
   const validate = (values) => {
-    const password = values.password;
-    const evaluation = zxcvbn(password);
     let errors = {};
 
     if (values.name.length === 0) {
@@ -118,7 +116,7 @@ const SignupForm = () => {
         hideLoader();
         setDisable(false);
         console.log(res);
-        if (res.status == 201) {
+        if (res.status === 201) {
           history.push({
             pathname: "/email-verification",
             state: {
@@ -126,7 +124,7 @@ const SignupForm = () => {
             },
           });
         }
-        if (res.status == 422) {
+        if (res.status === 422) {
           setRepeatedEmail(true);
         }
       } catch (error) {

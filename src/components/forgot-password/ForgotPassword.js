@@ -59,7 +59,7 @@ const ForgotPasswordComponent = () => {
         hideLoader();
         setDisable(false);
 
-        if (res.status == 201) {
+        if (res.status === 201) {
           history.push({
             pathname: "/resend-reset-password",
             state: {
@@ -68,10 +68,11 @@ const ForgotPasswordComponent = () => {
           });
         }
 
-        if (res.status == 400) {
+        if (res.status === 400) {
           toast.error("🎃 Email not valid 🎃 ", {
             position: "top-center",
           });
+          setUnknownEmail("Email not registered");
         }
       } catch (error) {
         console.log(error);
