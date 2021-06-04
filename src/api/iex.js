@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: process.env.REACT_App_BASE_URL_IEX,
+  baseURL: REACT_App_BASE_URL_IEX,
 });
 
-const token = process.env.REACT_App_Token;
+const token = REACT_App_Token;
 
 export const loadQuotesForStock = (symbol) => {
   return api
@@ -32,7 +32,7 @@ export const loadChartForStock = (symbol, range) => {
 // const symbols = "AMZN";
 export const loadChartForDate = async (symbols, dates) => {
   const data = await fetch(
-    `${process.env.REACT_App_BASE_URL_IEX}/stock/${symbols}/chart/time-series?on=${dates}&token=${token}`
+    `${REACT_App_BASE_URL_IEX}/stock/${symbols}/chart/time-series?on=${dates}&token=${token}`
   ).then((response) => response.json());
 
   return data;

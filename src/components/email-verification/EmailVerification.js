@@ -20,16 +20,13 @@ const EmailVerificationComponent = () => {
       email: email,
     };
     try {
-      const res = await fetch(
-        `${process.env.REACT_App_BASE_URL}/resend_email`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(dataResend),
-        }
-      );
+      const res = await fetch(`${REACT_App_BASE_URL}/resend_email`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataResend),
+      });
       hideLoader();
 
       if (res.status === 200) {

@@ -55,16 +55,13 @@ const SetupPasswordComponent = () => {
       showLoader();
       setDisable(true);
       try {
-        const res = await fetch(
-          `${process.env.REACT_App_BASE_URL}/reset_password`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(dataResetPassword),
-          }
-        );
+        const res = await fetch(`${REACT_App_BASE_URL}/reset_password`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(dataResetPassword),
+        });
         hideLoader();
         setDisable(false);
 

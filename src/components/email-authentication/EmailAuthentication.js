@@ -17,16 +17,13 @@ const AuthenticationOfEmail = () => {
       token: token,
     };
     try {
-      const res = await fetch(
-        `${process.env.REACT_App_BASE_URL}/email_verify`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(dataEmailVerify),
-        }
-      );
+      const res = await fetch(`${REACT_App_BASE_URL}/email_verify`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataEmailVerify),
+      });
 
       if (res.status === 200) {
         history.push("/email-verified");

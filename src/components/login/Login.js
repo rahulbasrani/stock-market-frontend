@@ -59,7 +59,7 @@ const LoginComponent = () => {
       showLoader();
       setDisable(true);
       try {
-        const res = await fetch(`${process.env.REACT_App_BASE_URL}/signin`, {
+        const res = await fetch(`${REACT_App_BASE_URL}/signin`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
