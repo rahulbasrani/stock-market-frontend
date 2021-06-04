@@ -23,13 +23,16 @@ const ResetPasswordComponent = () => {
     };
     showLoader();
     try {
-      const res = await fetch(`${REACT_App_BASE_URL}/forgot_password`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(dataResendReset),
-      });
+      const res = await fetch(
+        `https://stock-market-backend-in-mern.herokuapp.com/forgot_password`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(dataResendReset),
+        }
+      );
       hideLoader();
 
       if (res.status === 201) {

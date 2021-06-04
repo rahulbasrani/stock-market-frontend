@@ -59,13 +59,16 @@ const LoginComponent = () => {
       showLoader();
       setDisable(true);
       try {
-        const res = await fetch(`${REACT_App_BASE_URL}/signin`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(dataLogin),
-        });
+        const res = await fetch(
+          `https://stock-market-backend-in-mern.herokuapp.com/signin`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataLogin),
+          }
+        );
         hideLoader();
         setDisable(false);
 

@@ -106,13 +106,16 @@ const SignupForm = () => {
       setDisable(true);
       try {
         injectStyle();
-        const res = await fetch(`${REACT_App_BASE_URL}/register`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(dataRegister),
-        });
+        const res = await fetch(
+          `https://stock-market-backend-in-mern.herokuapp.com/register`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataRegister),
+          }
+        );
         hideLoader();
         setDisable(false);
         console.log(res);
