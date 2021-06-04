@@ -1,7 +1,6 @@
 import React from "react";
 
-// const CheckMark = require("@images/check-circle.svg");
-const HeroSignup = require("../../assets/images/img_login.svg");
+import HeroSignup from "../../assets/images/img_login.svg";
 
 const SignupDescription = () => {
   return (

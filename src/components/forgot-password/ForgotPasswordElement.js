@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
 
-const HeroForgotPassword = require("../../assets/images/img_login.svg");
+import HeroForgotPassword from "../../assets/images/img_login.svg";
 
 const ForgotPasswordElement = (props) => {
   const history = useHistory();

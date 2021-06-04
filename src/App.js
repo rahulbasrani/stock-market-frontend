@@ -1,6 +1,6 @@
 import "./App.css";
-import React, { useState, useCallback } from "react";
-import { Switch, Redirect, Route } from "react-router-dom";
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
 import Dashboard from "../src/components/dashboard/Dashboard";
 import Signup from "../src/components/signup/Signup";

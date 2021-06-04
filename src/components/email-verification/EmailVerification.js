@@ -6,7 +6,7 @@ import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import useFullPageLoader from "../loader/use-fullpage-loader";
 import "./email.style.css";
-const HeroEmail = require("../../assets/images/img_login.svg");
+import HeroEmail from "../../assets/images/img_login.svg";
 
 const EmailVerificationComponent = () => {
   const location = useLocation();

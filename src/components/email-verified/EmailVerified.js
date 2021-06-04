@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 
 import "./email-verified.style.css";
 
-const Success = require("../../assets/images/success.svg");
+import Success from "../../assets/images/success.svg";
 
 const EmailVerifiedComponent = () => {
   const history = useHistory();

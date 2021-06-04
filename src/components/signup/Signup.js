@@ -1,11 +1,10 @@
 import * as React from "react";
-import { FormikErrors, useFormik } from "formik";
+import { useFormik } from "formik";
 import { injectStyle } from "react-toastify/dist/inject-style";
 import { ToastContainer, toast } from "react-toastify";
 import { useHistory } from "react-router-dom";
 import zxcvbn from "zxcvbn";
 
-import Alert from "../alert/Alert";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import FormElement from "./SignupElement";
@@ -13,19 +12,8 @@ import SignupDescription from "./SignupDescription";
 import useFullPageLoader from "../loader/use-fullpage-loader";
 import "react-toastify/dist/ReactToastify.css";
 import "./signup.style.css";
-// import useCommonAlert from "../common-alert/use-common-alert";
 
-// const Error = require("@images/danger.svg");
 toast.configure();
-
-// interface FormValues {
-//   email: string;
-//   firstName: string;
-//   lastName: string;
-//   organizationName: string;
-//   password: string;
-//   toggle: boolean;
-// }
 
 const SignupForm = () => {
   const history = useHistory();
@@ -120,16 +108,13 @@ const SignupForm = () => {
       setDisable(true);
       try {
         injectStyle();
-        const res = await fetch(
-          `${process.env.REACT_App_BASE_URL}/register`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(dataRegister),
-          }
-        );
+        const res = await fetch(`${process.env.REACT_App_BASE_URL}/register`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(dataRegister),
+        });
         hideLoader();
         setDisable(false);
         console.log(res);

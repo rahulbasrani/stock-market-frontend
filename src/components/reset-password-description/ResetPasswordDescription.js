@@ -8,7 +8,7 @@ import useFullPageLoader from "../loader/use-fullpage-loader";
 import "./reset-password.style.css";
 import "react-toastify/dist/ReactToastify.css";
 
-const HeroResetPassword = require("../../assets/images/img_login.svg");
+import HeroResetPassword from "../../assets/images/img_login.svg";
 
 const ResetPasswordComponent = () => {
   const [loader, showLoader, hideLoader] = useFullPageLoader();

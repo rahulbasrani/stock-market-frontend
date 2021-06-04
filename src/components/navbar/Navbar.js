@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
 
-const logo = require("../../assets/images/logo-stock.png");
+import logo from "../../assets/images/logo-stock.png";
 
 const Navbar = () => {
   const history = useHistory();

@@ -5,7 +5,7 @@ import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import "./error.style.css";
 
-const Success = require("../../assets/images/error.svg");
+import Success from "../../assets/images/error.svg";
 
 const ErrorComponent = () => {
   const history = useHistory();

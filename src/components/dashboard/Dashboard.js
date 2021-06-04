@@ -25,7 +25,7 @@ import {
 } from "@material-ui/pickers";
 import { setDate } from "date-fns";
 
-const HeroEmail = require("../../assets/images/img_login.svg");
+import HeroEmail from "../../assets/images/img_login.svg";
 
 class DashBoard extends Component {
   state = {
