@@ -6,7 +6,6 @@ import logo from "../../assets/images/logo-stock.png";
 const Navbar = () => {
   const history = useHistory();
   React.useEffect(() => {
-    const history = useHistory();
     let data = localStorage.getItem("isLogin");
     if (!data) {
       history.push("/login");
