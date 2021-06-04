@@ -51,11 +51,3 @@ const DateTable = ({ open, close, high, low, change, symbol, volume }) => {
 };
 
 export default DateTable;
-
-{
-  /* <td className={!!stockIsUp ? "text-success" : "text-danger"}>
-            {!!stockIsUp
-              ? String.fromCharCode(9650) + " " + close
-              : String.fromCharCode(9660) + " " + close}
-          </td> */
-}

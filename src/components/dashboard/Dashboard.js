@@ -219,7 +219,6 @@ class DashBoard extends Component {
                     value={year}
                     onChange={this.onChangeYear}
                     required
-                    name="select1"
                   >
                     <option value="select">--Select One--</option>
                     <option value="1d">Today</option>

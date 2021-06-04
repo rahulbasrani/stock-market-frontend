@@ -7,7 +7,6 @@ const Navbar = () => {
   const history = useHistory();
   React.useEffect(() => {
     let data = localStorage.getItem("isLogin");
-
     if (!data) {
       history.push("/login");
     }
