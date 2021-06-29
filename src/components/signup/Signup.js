@@ -3,7 +3,6 @@ import { useFormik } from "formik";
 import { injectStyle } from "react-toastify/dist/inject-style";
 import { ToastContainer, toast } from "react-toastify";
 import { useHistory } from "react-router-dom";
-import zxcvbn from "zxcvbn";
 
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";

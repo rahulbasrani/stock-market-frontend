@@ -164,7 +164,6 @@ class DashBoard extends Component {
       year,
       quoteHistory,
       showHistory,
-      news,
       chart,
       showAllChart,
       error,
