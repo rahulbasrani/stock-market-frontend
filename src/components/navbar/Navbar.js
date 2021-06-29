@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
-
+import "./Navbar.css";
 import logo from "../../assets/images/logo-stock.png";
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
     history.push("/signup");
   };
   return (
-    <div>
+    <div className="navbar-login-body">
       <nav className="navbar navbar-expand-lg col-md-11 mx-auto navbar-light">
         <a className="navbar-brand" href="/signup">
           <img

@@ -41,7 +41,7 @@ const LoginElement = (props) => {
 
               <form
                 className="login-form pt-4"
-                id="login-form"
+                id="login-form-class"
                 autoComplete="off"
                 onSubmit={props.submit}
               >
@@ -92,11 +92,11 @@ const LoginElement = (props) => {
                     <span className="login-button-text ">Log in</span>
                   </button>
                 </div>
-                <div className="col-md-12 mt-5">
+                <div className="col-md-12 forgot-pass mt-3 mb-3">
                   <span>
                     <span
                       onClick={forgotPasswordChange}
-                      className="anchor-class-login-register text-decoration-none"
+                      className="anchor-class-login-register  text-decoration-none"
                     >
                       forgot password?
                     </span>

@@ -106,16 +106,19 @@ class DashBoard extends Component {
     });
   };
 
-  onChangeDate = (date) => {
+  onChangeDate = async (date) => {
+    const { enteredSymbol } = this.state;
+    const data = await loadChartForDate(enteredSymbol, date);
     this.setState({
       date: date,
+      dateData: data,
+      isDate: true,
     });
   };
 
   onChangeDateData = async () => {
     const { enteredSymbol, date } = this.state;
     const data = await loadChartForDate(enteredSymbol, date);
-    console.log(data);
     this.setState({
       dateData: data,
       isDate: true,
@@ -190,13 +193,9 @@ class DashBoard extends Component {
         <div className="App dashboard-body">
           <div className=" pb-3 jumbotron-class">
             <span>
-              <img
-                className="img-dashboard  col-md-4"
-                src={HeroEmail}
-                alt=" "
-              />
+              <img className="img-dashboard col-md-4" src={HeroEmail} alt=" " />
             </span>
-            <div className="container  container-class col-md-6">
+            <div className="container  container-class  col-md-6">
               <h1 className="col-md-10 class-heading">
                 Stock Market Representation
               </h1>
@@ -209,7 +208,7 @@ class DashBoard extends Component {
                   <select
                     name="year"
                     id="year"
-                    className=" custom-select dropdown-year col-md-8 py-2"
+                    className=" custom-select"
                     value={year}
                     onChange={this.onChangeYear}
                     required
@@ -247,16 +246,18 @@ class DashBoard extends Component {
                     name="enteredSymbol"
                     value={enteredSymbol}
                     placeholder="Symbol e.g. AMZN"
-                    className="form-control col-md-8"
+                    className="form-control"
+                    id="companies"
                     aria-label="Symbol"
                     onChange={this.onChangeEnteredSymbol}
                     onKeyDown={this.onKeyDownPressEnter}
                     required
                   />
-                  <span className="input-group-btn">
+                  <span className="">
                     <button
                       type="button"
                       name="button"
+                      id="show-stock-id"
                       className="btn btn-success ml-1"
                       style={{
                         padding: "10px",
@@ -293,7 +294,7 @@ class DashBoard extends Component {
                     }}
                   />
                 </MuiPickersUtilsProvider>
-                <span className="input-group-btn">
+                <span className="">
                   <button
                     type="button"
                     className="btn btn-primary ml-2 mt-0"
@@ -331,6 +332,7 @@ class DashBoard extends Component {
                 <div className="mt-3">
                   <button
                     className="btn btn-success btn-block"
+                    id="show-previous-stocks-id"
                     onClick={this.onClickShowHistory}
                   >
                     {showHistory ? "Hide" : "Show Previous Stock Data"}
@@ -405,6 +407,7 @@ class DashBoard extends Component {
                     )}
                     <button
                       className="btn btn-success my-3 btn-block"
+                      id="show-previous-stocks-id"
                       onClick={this.onClickShowAllChart}
                     >
                       {showAllChart ? "Show Less" : "Show All"}

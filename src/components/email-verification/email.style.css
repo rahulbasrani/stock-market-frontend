@@ -226,6 +226,11 @@ button:hover .arrow-email::after {
     padding-left: 0vw;
     float: left;
   }
+  .hero-email-form {
+    height: 60vh;
+    width: 90vw;
+    margin-top: -7vh;
+  }
   .verify-email-heading {
     font-size: 1.1rem;
     text-align: left;

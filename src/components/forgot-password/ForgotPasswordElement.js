@@ -73,7 +73,7 @@ const ForgotPasswordElement = (props) => {
                     </span>
                   </button>
                 </div>
-                <div className="col-md-12 mt-5">
+                <div className="col-md-12 forgot-passs my-3">
                   <span>
                     <span
                       onClick={handleBackToLogin}

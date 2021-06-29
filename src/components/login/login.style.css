@@ -190,6 +190,16 @@ button:hover .arrow-login::after {
     width: 90vw;
     height: 450px;
   }
+  .login-btn {
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+  }
+  .form-control-email {
+    font-size: 3rem;
+  }
+  .forgot-pass {
+    margin-top: -15px;
+  }
   .img-div-login {
     height: 300px;
     padding-left: 0vw;

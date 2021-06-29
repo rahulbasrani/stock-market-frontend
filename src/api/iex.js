@@ -4,7 +4,7 @@ const api = axios.create({
   baseURL: "https://sandbox.iexapis.com/stable",
 });
 
-const token = process.env.REACT_App_Token;
+const token = "Tpk_059b97af715d417d9f49f50b51b1c448";
 
 export const loadQuotesForStock = (symbol) => {
   return api

@@ -257,9 +257,7 @@ button:hover {
 .resend-password-class {
   margin-top: 105px;
 }
-.login-form-class {
-  margin-top: 165px;
-}
+
 .btn-contact {
   border: 1px solid #2d9703;
   background-color: white;
@@ -520,10 +518,32 @@ button:hover .arrow::after {
 @media (max-width: 481px) {
   .form-control {
     height: 45px;
-    font-size: 2vw;
+    font-size: 3.5vw;
+  }
+  .hero-signup-form {
+    height: 100vw;
+    width: 100vw;
+    margin-left: -3vw;
+    margin-top: -5vh;
+  }
+  #chkbx {
+    margin-top: 8px;
+  }
+  .form-title {
+    font-size: 1.3rem;
   }
   .img-div {
-    margin-bottom: 0px;
+    height: 400px;
+    float: left;
+    margin-top: 25px;
+  }
+  .logo-texts {
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #2d9703;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
   }
   .nav-item {
     text-align: center;
@@ -539,6 +559,9 @@ button:hover .arrow::after {
   }
   h1 {
     font-size: 30px;
+  }
+  #login-form-class {
+    margin-top: -29px;
   }
   .create-account-class {
     margin-left: -50vw;
@@ -559,6 +582,11 @@ button:hover .arrow::after {
     width: 90vw;
     margin-left: 0vw;
     height: 300px;
+  }
+  .signup-button-text {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 3.65vw;
   }
   .btn-contact {
     padding: 3.7px 0.3vw;
@@ -583,7 +611,7 @@ button:hover .arrow::after {
   .anchor-class-checkbox {
     color: #2d9703;
     font-size: 2vw;
-    margin-top: 1vw;
+    margin-top: 3.2vw;
   }
   .checkbox label {
     margin-right: 1.5vw;

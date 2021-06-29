@@ -23,7 +23,7 @@ const Navbar = () => {
     }
   };
   return (
-    <div>
+    <div className="navbar-body">
       <nav className="navbar navbar-expand-lg col-md-11 mx-auto navbar-light">
         <a className="navbar-brand" href="/signup">
           <img
@@ -33,7 +33,8 @@ const Navbar = () => {
             className="img-logos"
             alt="reactangel1"
           />
-          &nbsp; <span className="logo-texts">Stock Representation</span>
+          &nbsp;
+          <span className="logo-text-dashboard">Stock Representation</span>
         </a>
         <button
           className="navbar-toggler collapsed"

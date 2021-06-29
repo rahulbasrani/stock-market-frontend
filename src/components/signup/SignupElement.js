@@ -146,8 +146,6 @@ const FormElement = (props) => {
                 <a href="/tnc" className="anchor-class-checkbox">
                   terms & condition
                 </a>
-                {/* <span>{translation.t("I_AGREE_TO_OMNIMETIC")}</span> */}
-                {/* <span>{translation.t("AND")}</span> */}
               </div>
               <div className="form-group form-button col-md-12 ">
                 <button
@@ -159,7 +157,6 @@ const FormElement = (props) => {
                 >
                   <div className="signup-button-text">
                     <span className="signup-submit-btn-cls">
-                      {/* {translation.t("CREATE_ACCOUNT")} */}
                       Signup your account
                     </span>
                     <span className="arrow"></span>

@@ -20,6 +20,14 @@ select option:hover {
   -webkit-text-stroke-color: black;
   font-weight: 600;
 }
+.logo-text-dashboard {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #2d9703;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
 .date-errors {
   font-size: 2rem;
   color: tomato;
@@ -72,4 +80,95 @@ select option:hover {
 
 .border-class {
   border: 1px solid black;
+}
+
+@media (max-width: 460px) {
+  .logo-text-dashboard {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: #2d9703;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+  }
+  .container-class {
+    margin-top: 0vh;
+    color: #fcff56;
+    margin-bottom: 0vh;
+    margin-left: 0vw;
+  }
+  .img-dashboard {
+    margin-top: 2vh;
+    margin-left: 30vw;
+    height: 70vh;
+    width: 100vw;
+  }
+  .class-heading {
+    font-size: 1.5rem;
+    margin-left: 19vw;
+    margin-top: 2vh;
+  }
+  .jumbotron-class {
+    background-color: rgb(95, 129, 112);
+    color: white;
+    margin-left: 12.5vw;
+    width: 175%;
+  }
+  .navbar-body {
+    width: 195%;
+    margin-left: 5vw;
+  }
+  #companies {
+    font-size: 1rem;
+  }
+  #show-stock-id {
+    margin-top: 5vh;
+  }
+  #show-previous-stocks-id {
+    width: 200%;
+  }
+  .alert-danger {
+    width: 200vw;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 768px) {
+  .logo-text-dashboard {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: #2d9703;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+  }
+  .container-class {
+    margin-top: 0vh;
+    color: #fcff56;
+    margin-bottom: 0vh;
+    margin-left: 0vw;
+  }
+  .img-dashboard {
+    margin-top: 2vh;
+    margin-left: 0vw;
+    height: 70vh;
+    width: 100vw;
+  }
+  .class-heading {
+    font-size: 1.5rem;
+    margin-left: 19vw;
+    margin-top: 2vh;
+  }
+  .jumbotron-class {
+    background-color: rgb(95, 129, 112);
+    color: white;
+  }
+  .navbar-body {
+    margin-left: 5vw;
+  }
+  #companies {
+    font-size: 1rem;
+  }
+  #show-stock-id {
+    margin-top: 5vh;
+  }
 }
